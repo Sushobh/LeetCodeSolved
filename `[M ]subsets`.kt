@@ -1,6 +1,16 @@
 
 
 //https://leetcode.com/problems/subsets/
+
+
+
+//In case of an array like [1,2,3,4]
+//For each number at index I, add the number in a response list, pass the copy of the list to the next numbers i.e. from I+1 to N-1
+// For each of these numbers add the number to the received list, and perform the same process from I+2 to N-1
+// When the passed index I is equal to N-1 (i.e. the number at the last index), add the number to the copy of the list received and return.
+
+
+
 class Solution {
  fun subsets(nums: IntArray): List<List<Int>> {
     val dataList = mutableListOf<MutableList<Int>>()
